@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Leo Exhibit System
+Exec='@@REPO_PATH@@/shell_scripts/desktop_part/leo_exhibit.sh'
+Icon=@@REPO_PATH@@/icons/favicon.ico
+Terminal=False
