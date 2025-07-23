@@ -1,7 +1,8 @@
 #!/bin/bash
 export ROS_MASTER_URI=http://master.lan:11311
 export ROS_IP=$(hostname -I | xargs)
-source /opt/ros/noetic/setup.bash
+ROS_DISTRO=$(ls /opt/ros)
+source /opt/ros/${ROS_DISTRO}/setup.bash
 
 ## Launching teleoperation nodes with custom config for steam deck axes mapping
 CONFIG_FILE=@@REPO_PATH@@/configs/steam_deck_config.yaml
